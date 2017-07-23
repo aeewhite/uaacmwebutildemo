@@ -2,7 +2,7 @@
 
 To try it out:
 1. Sign up for a Typeform account.
-2. Set up a form, preferably with a first/last name field and email field.
+2. Set up a form, preferably with a first/last name field and email field (they have a default registration template that does the job).
 3. Go ahead and be the first person to fill out your form!
 4. Grab your API key and form id from Typeform and put them in static.py
 5. Run ./setup.sh (may need to run 'chmod u+x setup.sh' first)
