@@ -2,11 +2,12 @@ from person import Person
 from emailmanager import *
 from studentdbutil import *
 from sqlalchemy_declarative import Base
+from static import API_KEY, FORM_ID
 import typeform
 import datetime
 import time
 
-form = typeform.Form(api_key='bamboozled', form_id='99999')
+form = typeform.Form(api_key=API_KEY(), form_id=FORM_ID())
 
 engine = createEngine()
 
@@ -30,6 +31,8 @@ while 1:
         Base.metadata.bind = engine
         exists = session.query(Student).filter(Student.email == student.email).count()
         if exists == 0:
+            print(student.email)
+            print(student.firstName + ' ' + student.lastName)
             sendAcknowledgement(server, student.firstName, student.lastName, student.email, student.slack)
             session = addStudentToDb(engine, session, student)
     
