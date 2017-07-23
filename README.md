@@ -8,5 +8,5 @@ To try it out:
 5. Run ./setup.sh (may need to run 'chmod u+x setup.sh' first)
 6. With the question ids displayed from running the setup (or visible again through running getquestsions.py), put them in the appropriate places in studentdbutil.py
 7. Put your email and password in static.py (you may need to modify some security settings on your email account).
-8. Run ./startlistener.sh.
+8. Run ./startlistener.sh (may need to run 'chmod u+x startlistener.sh' first).
 9. You're good to go! Try filling out an entry on your Typeform form. It should send emails to respondents and populate a csv file representing your current database.
