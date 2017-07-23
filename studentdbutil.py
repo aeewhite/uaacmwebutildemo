@@ -12,15 +12,15 @@ def populateStudentList(responses, studentRegistrations):
         slack = ''
         size = ''
         for answer in response.answers:
-            if (answer.question_id == 'textfield_yXKKvdaz7tv2'):
+            if (answer.question_id == 'textfield_9999'):
                 firstName = answer.answer
-            elif (answer.question_id == 'textfield_taiS3lrxK9U8'):
+            elif (answer.question_id == 'textfield_9999'):
                 lastName = answer.answer
-            elif (answer.question_id == 'email_SektnOcbatGU'):
+            elif (answer.question_id == 'email_9999'):
                 email = answer.answer
-            elif (answer.question_id == 'yesno_56632187'):
+            elif (answer.question_id == 'yesno_9999'):
                 slack = answer.answer
-            elif (answer.question_id == 'dropdown_56649359'):
+            elif (answer.question_id == 'dropdown_9999'):
                 size = answer.answer
         studentRegistrations.append(Person(firstName, lastName, email, slack, size))
     return studentRegistrations
